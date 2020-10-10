@@ -9,14 +9,11 @@ object ServiceBuilder {
     //BASE URL
     private const val URL = "https://economia.awesomeapi.com.br/"
 
-
-
-
     // BUILDER RETROFIT
     private val builder = Retrofit.Builder()
         .baseUrl(URL)
         .addConverterFactory(GsonConverterFactory.create())
-        
+
 
     // CREATE RETROFIT INSTANCE
     private val retrofit = builder.build()
