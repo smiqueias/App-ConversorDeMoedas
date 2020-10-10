@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
                         bt_euro.setOnClickListener {
                             val priceEuro = et_valorEmReal.text.toString().toDouble()
 
-                            val currentDollarPrice = response.body()?.eUR?.ask
+                            val currentEuroPrice = response.body()?.eUR?.ask
 
                             tv_textoParConversao.text = "VALOR CONVERTIDO EM EURO"
 
